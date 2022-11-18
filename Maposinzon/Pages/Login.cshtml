@@ -1,0 +1,132 @@
+﻿@page
+@model LoginModel
+@{
+    ViewData["Title"] = "Login";
+}
+<html>
+<head>
+
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+    <link rel="stylesheet" href="css/grad.css">
+    <link rel="stylesheet" href="css/hover.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Open+Sans:wght@800&display=swap" />
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: auto;
+        }
+
+        form {
+            border: 3px solid #f1f1f1;
+        }
+
+        input[type=text], input[type=password] {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+
+
+        h1 {
+            text-transform: uppercase;
+            background-image: linear-gradient( -225deg, #ff1361 0%, #ff892a 29%, #ff9c24 67%, #ff1361 100% );
+            background-size: auto auto;
+            background-clip: border-box;
+            background-size: 200% auto;
+            color: #fff;
+            background-clip: text;
+            text-fill-color: transparent;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: move-bg 15s linear infinite;
+            display: inline-block;
+            font-size: 40px;
+            text-align: center;
+            font-family: 'Open Sans', serif;
+            font-weight: bold;
+        }
+
+
+
+        .imgcontainer {
+            text-align: center;
+            margin: 24px 0 12px 0;
+        }
+
+        .container {
+            padding: 16px;
+            border: none;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        span.psw {
+            float: right;
+            padding-top: 16px;
+        }
+
+        button {
+            background-image: linear-gradient(to right, #ff2857 0%, #F09819 51%, #FF512F 100%);
+            padding: 14px 20px;
+            margin: 8px 0;
+            cursor: pointer;
+            width: 100%;
+            border: none;
+            text-align: center;
+            text-transform: uppercase;
+            transition: 0.5s;
+            background-size: 200% auto;
+            color: white;
+            box-shadow: 0 0 20px #eee;
+            display: block;
+            font-family: 'Open Sans', serif;
+            font-weight: bold;
+            font-size: 50;
+            border-radius: 4px;
+        }
+
+            button:hover {
+                background-position: right center; /* change the direction of the change here */
+                color: #fff;
+                text-decoration: none;
+            }
+
+        input[type=checkbox] {
+            accent-color: #f0961a;
+        }
+    </style>
+</head>
+<body>
+    <a>
+        <h1 class="animate-charcter">Login</h1>
+    </a>
+
+    <form action="/action_page.php" method="post">
+
+
+        <div class="container">
+            <label for="uName"><b>Username</b></label>
+            <input type="text" placeholder="Enter Username" name="uName" required>
+
+            <label for="pwd"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="pwd" required>
+
+            <button type="submit">Login</button>
+            <label>
+                <input type="checkbox" checked="checked" name="remember"> Remember me
+            </label>
+        </div>
+
+
+    </form>
+
+</body>
+</html>

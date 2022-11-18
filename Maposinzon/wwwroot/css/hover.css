@@ -1,0 +1,26 @@
+﻿.hover{
+    color: inherit;
+    text-decoration: none;
+}
+
+.hover{
+    background: linear-gradient( to right, rgba(255, 137, 43, 1), rgba(255, 137, 43, 1) ), linear-gradient( to right, rgba(255, 71, 75, 1), rgba(255, 103, 83, 1), rgba(249, 243, 69, 255) );
+    background-size: 100% 3px, 0 3px;
+    background-position: 100% 100%, 0 100%;
+    background-repeat: no-repeat;
+    transition: background-size 400ms;
+}
+
+    .hover:hover {
+        background-size: 0 3px, 100% 3px;
+    }
+
+/* Presentational Styles */
+body {
+    display: grid;
+    font-family: Arial, sans-serif;
+    font-size: 27px;
+    font-weight: 800;
+    height: 20vh;
+    place-items: center;
+}
